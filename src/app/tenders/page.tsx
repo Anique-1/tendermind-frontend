@@ -15,7 +15,7 @@ export default function TendersPage() {
     if (!query) return;
     setLoading(true);
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://216-128-158-238.ip.sslip.io";
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://anique-1-tendermind-backend.hf.space";
       const res = await fetch(`${apiUrl}/api/tenders/search?query=${encodeURIComponent(query)}`);
       if (res.ok) {
         const data = await res.json();

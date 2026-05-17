@@ -18,7 +18,7 @@ export default function ProfilePage() {
   useEffect(() => {
     async function fetchProfile() {
       try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://216.128.158.238:8000";
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://anique-1-tendermind-backend.hf.space";
         const res = await fetch(`${apiUrl}/api/company/profile`);
         if (res.ok) {
           const data = await res.json();
@@ -47,7 +47,7 @@ export default function ProfilePage() {
     };
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://216.128.158.238:8000";
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://anique-1-tendermind-backend.hf.space";
       const res = await fetch(`${apiUrl}/api/company/profile`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

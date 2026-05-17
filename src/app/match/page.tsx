@@ -84,7 +84,7 @@ export default function MatcherPage() {
     setError(null);
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://216.128.158.238:8000";
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://anique-1-tendermind-backend.hf.space";
       const res = await fetch(`${apiUrl}/api/agents/langgraph-pipeline`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
